@@ -22,7 +22,7 @@ window.onload = function() {
 
     // images from reddit/r/wallpapers
     var urls = [
-            'http://localhost:81/queenmodel/html/img/logo.png',
+            'http://nqtuan164.github.io/queenmodel/img/logo.png',
             // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/spaceship.jpg',
             // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/dj.jpg',
             // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/chicken.jpg'
