@@ -20,7 +20,7 @@ define([
 		cells: null,
 		cover: '.hover',
 		isSuccess: false,
-		isFlag: false;
+		isFlag: false,
 		render: function() {
 			this.mode = new HardMode();
 			
