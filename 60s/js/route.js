@@ -25,7 +25,7 @@ define([
 
 	var initialize = function() {
 		FB.init({
-			appId: '1662180654022113'
+			appId: '1442037889351649'
 		});
 		var router = new AppRoute();
 		var login_status = new LoginStatusView();
