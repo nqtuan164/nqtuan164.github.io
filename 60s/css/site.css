@@ -1,0 +1,507 @@
+/* 
+    Color Scheme:
+    White milk: 247,247,215
+    Blue: 91, 177, 193
+    Bule hover: 71, 140, 153
+    Orange: 230, 88, 49
+    */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: "lobster";
+    src: url('lobster.ttf') format('truetype');
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+}
+
+@-webkit-keyframes shake {
+0% { transform: scale(1); }
+    10% { transform: rotate(10deg); }
+    17% { transform: scale(1.2); }
+    20% { transform: skew(20deg,20deg); }
+    25% { transform: rotate(-10deg); }
+    26% { opacity: 0.5; }
+    34% { transform: scale(0.8); }
+    42% { transform: rotate(6deg); }
+    48% { transform: skew(-20deg,-20deg); }
+    51% { transform: scale(1.1); }
+    61% { transform: rotate(-6deg); }
+    68% { transform: scale(0.9); }
+    70% { transform: skew(10deg,10deg); }
+    76% { transform: rotate(3deg); }
+    85% { transform: scale(1.05); }
+    98% { opacity: 1; }
+    99% { transform: rotate(0deg); }
+    100% { transform: scale(1); }
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(247, 247, 215, 1);
+}
+
+.btn:hover {
+    background-color: rgb(71, 140, 153) !important;
+    border: 1px solid rgb(71, 140, 153) !important;
+}
+
+
+#animation-area {
+    width: 100%; 
+	height: 308px; 
+	background-image: url(../img/60s.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 20s linear infinite;
+    -webkit-animation: animatedBackground 20s linear infinite;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0.7;
+    margin: auto;
+
+    z-index: 100;
+}
+
+.logo {
+    width: 317px;
+    height: 189px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    z-index: 200;
+}
+.level-selection {
+    width: 205px;
+    height: 1px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    z-index: 200;
+}
+.level-button-group {
+    width:  200px;
+    height: 0;
+    position: absolute;
+    margin: 110px auto 0px auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* margin:  auto; */
+}
+
+    .level-button-group .level-button {
+        margin-bottom: 6px;
+        font-family: "lobster";
+        font-size: 25px;
+        width: 200px !important;
+        background-color: rgb(91, 177, 193) !important;
+        border: 1px solid rgb(91, 177, 193) !important;
+        text-shadow: none;
+    }
+
+        .level-button-group .level-button:hover {
+            background-color: rgb(71, 140, 153) !important;
+            border: 1px solid rgb(71, 140, 153) !important;
+            text-shadow: none;
+        }
+        .level-button-group .level-button:active {
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+
+
+.login-div {
+    width: 500px;
+    height: 305px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    padding: 20px;
+    z-index: 200;
+
+    font-family: lobster;
+    font-size: 15px;
+    color: rgb(71, 140, 153);
+    text-align: left;
+    background-color: rgba(247,247,215, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+    .login-div h2 {
+        font-family: lobster;
+        font-size: 50px;
+    }
+
+.login-status {
+    position: absolute;
+    z-index: 200;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1050;
+}
+    .login-status .login-true {
+        font-family: "lobster";
+        font-size: 18px;
+
+        display: none;
+    }
+
+        .login-status .login-true .btn-logout {
+            font-size: 18px;
+        }
+
+    .login-status .login-false {
+        font-family: "lobster";
+        font-size: 18px;
+
+        display: block;
+    }
+
+        .login-status .login-false .btn-login {
+            font-size: 18px;
+        }
+
+.btn-back {
+    font-family: "lobster";
+    font-size: 18px;
+    border-color: rgb(238, 136, 100);
+    background-color: rgb(238, 136, 100);
+    color: #fff;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+.btn-back:hover {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+    color: #fff !important;
+}
+.btn-back:active {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+}
+
+.sound {
+    font-family: "lobster";
+    font-size: 18px;
+    
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.btn-control {
+    font-family: "lobster";
+    font-size: 18px;
+    border-color: rgb(238, 136, 100);
+    background-color: rgb(238, 136, 100);
+    color: #fff;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+.btn-control:hover {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+    color: #fff !important;
+}
+.btn-control:active {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+    footer p {
+        text-align: center;
+        color: rgb(71, 140, 153);
+    }
+
+
+
+
+/* 
+ * MODE CONTAINER
+ */
+.mode-container {
+    width: 550px;
+	
+    height: 510px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 20px;
+	z-index: 200;
+	font-family: lobster;
+	font-size: 15px;
+	color: rgb(71, 140, 153);
+	text-align: left;
+	background-color: rgba(247,247,215, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cell-easy {
+    width: 75px;
+    height: 69px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    padding: 13px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    /* position: absolute; */
+} 
+.cell-easy:hover {
+    opacity: 0.8;
+}
+
+
+.cell-hard {
+    width: calc((100% - 48px) / 8);
+    height: 53px;
+    float: left;
+    text-align: center;
+    margin: 3px;
+    padding: 8px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    /* position: absolute; */
+} 
+.cell-hard:hover {
+    opacity: 0.8;
+}
+
+
+.cell-ogran {
+    background: rgb(238, 136, 100);
+}
+
+.cell-blue {
+    background: rgb(91, 177, 193);
+}
+
+.cell-hidden {
+    visibility: hidden;
+}
+.cell-checked {
+    background: rgb(0, 0, 0);
+}
+
+.countdown {
+    position: absolute;
+    bottom: calc((100% - 114px) / 11);
+    right: calc((100% - 84px) / 4.5);
+    font-size: 80px;
+    font-family: lobster;
+    z-index: 200;
+    color: rgb(91, 177, 193);
+}
+.countdown:after {
+    content: '\"';
+    font-size: 60px;
+    font-family: lobster;
+    z-index: 200;
+    top: 7px;
+    position: absolute;
+    color: rgb(91, 177, 193);
+}
+
+.countdown-red {
+    animation: shake 1s linear infinite;
+    -webkit-animation: shake 1s linear infinite;
+
+    color: rgb(238, 136, 100);
+}
+
+.countdown-red:after {
+    color: rgb(238, 136, 100);
+
+}
+
+.number {
+    position: absolute;
+    bottom: calc((100% - 114px) / 11);
+    left: calc((100% - 84px) / 4.5);
+    font-size: 80px;
+    font-family: lobster;
+    z-index: 200;
+    color: rgb(238, 136, 100);
+}
+
+
+.hover {
+    background: rgba(247, 247, 215, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+
+    font-family: 'lobster';
+    color: rgb(238, 136, 100);
+    display: none;
+}
+
+.hover .text {
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    font-size: 150px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.result-hover {
+    background: rgba(247, 247, 215, 0.99);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+
+    font-family: 'lobster';
+    color: rgb(238, 136, 100);
+
+    display: none;
+}
+
+.result-hover .text {
+    width: 800px;
+    height: 500px;
+    text-align: right;
+    font-size: 150px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 250px;
+}
+
+.result-hover img {
+    position: absolute;
+    margin-left: -300px;
+    margin-top: -250px;
+}
+.result-hover .fail {
+    color: rgb(91, 177, 193);
+}
+.result-hover .win {
+    color: rgb(238, 136, 100);
+}
+.howtoplay {
+    background: rgba(247, 247, 215, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1060;
+
+    font-family: 'lobster';
+    color: rgb(238, 136, 100);
+    display: none;
+}
+
+.howtoplay .imgs{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 915px;
+    height: 565px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.howtoplay .imgs img {
+    width: 100%;
+    height: auto;
+}
+
+.btnHowtoplay {
+    font-family: "lobster";
+    font-size: 18px;
+    border-color: rgb(238, 136, 100);
+    background-color: rgb(238, 136, 100);
+    color: #fff;
+
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 1100;
+}
+.btnHowtoplay:hover {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+    color: #fff !important;
+}
+.btnHowtoplay:active {
+    background-color: rgb(238, 136, 100) !important;
+    border: 1px solid rgb(238, 136, 100) !important;
+}
+
+.btn-facebook {
+    position: absolute;
+    
+    bottom: 0px;
+    right: 0px;
+    font-size: 20px;
+}

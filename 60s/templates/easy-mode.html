@@ -1,0 +1,19 @@
+<div class="mode-container easy-mode-container">
+	<div class="cell-box">
+
+		<%  _.each(cells, function(cell) { 
+				var color = _.random(0, 1);
+
+			%>
+			<div class="cell cell-easy <%= (color == 0) ? 'cell-ogran' : 'cell-blue' %>" 
+					id="<%= 'cell-' + cell.id %>" 
+					data-value="<%= cell.value %>"
+					data-index="<%= cell.id %>" ><%= cell.value %></div>
+		<% }); %>
+
+
+	</div>
+</div>
+<div class="number"></div>
+<div class="countdown">60</div>
+<button class="btn btn-control" role="start">Start</button>
