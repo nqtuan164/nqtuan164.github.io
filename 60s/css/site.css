@@ -505,3 +505,39 @@ footer {
     right: 0px;
     font-size: 20px;
 }
+
+.onMobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3000;
+    background-color: rgba(247, 247, 215, 1);
+}
+.onMobile .mobile_container {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+.onMobile p {
+    font-family: "lobster";
+    font-size: 5em;
+    text-align: center;
+    color: rgb(91, 177, 193);
+}
+
+.closeMobile {
+    font-family: "lobster";
+    font-size: 2em;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+}
